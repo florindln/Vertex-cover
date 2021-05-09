@@ -1,0 +1,20 @@
+G:\TUE courses\data-structures-2\dataStructuresApp\bin\Debug\dataStructuresApp.exe.config
+G:\TUE courses\data-structures-2\dataStructuresApp\bin\Debug\dataStructuresApp.exe
+G:\TUE courses\data-structures-2\dataStructuresApp\bin\Debug\dataStructuresApp.pdb
+G:\TUE courses\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.csprojAssemblyReference.cache
+G:\TUE courses\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.Properties.Resources.resources
+G:\TUE courses\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.csproj.GenerateResource.cache
+G:\TUE courses\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.csproj.CoreCompileInputs.cache
+G:\TUE courses\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.exe
+G:\TUE courses\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.pdb
+G:\TUE courses\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.Form1.resources
+C:\Users\ADA\Documents\GitHub\data-structures-2\dataStructuresApp\bin\Debug\dataStructuresApp.exe.config
+C:\Users\ADA\Documents\GitHub\data-structures-2\dataStructuresApp\bin\Debug\dataStructuresApp.exe
+C:\Users\ADA\Documents\GitHub\data-structures-2\dataStructuresApp\bin\Debug\dataStructuresApp.pdb
+C:\Users\ADA\Documents\GitHub\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.csprojAssemblyReference.cache
+C:\Users\ADA\Documents\GitHub\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.Form1.resources
+C:\Users\ADA\Documents\GitHub\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.Properties.Resources.resources
+C:\Users\ADA\Documents\GitHub\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.csproj.GenerateResource.cache
+C:\Users\ADA\Documents\GitHub\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.csproj.CoreCompileInputs.cache
+C:\Users\ADA\Documents\GitHub\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.exe
+C:\Users\ADA\Documents\GitHub\data-structures-2\dataStructuresApp\obj\Debug\dataStructuresApp.pdb
