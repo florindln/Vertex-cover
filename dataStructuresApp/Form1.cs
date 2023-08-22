@@ -67,7 +67,7 @@ namespace dataStructuresApp
                 dot.WaitForExit(); 
                 myPictureBox.ImageLocation = "graph.png"; */
             Process dot = new Process();
-            dot.StartInfo.FileName = "dot.exe";
+            dot.StartInfo.FileName = "graphViz\\bin\\dot.exe";
             dot.StartInfo.Arguments = "-Tpng graph.dot -o graph.png";
             dot.Start();
             dot.WaitForExit();
@@ -77,16 +77,16 @@ namespace dataStructuresApp
         private int[] preprocess()
         {
             g.kernelization(Convert.ToInt32(maxVertexCover.Text));
-            int[] cover = new int[g.GetVertices()] ;
+            int[] cover = new int[g.GetVertices()];
 
             foreach (int top in g.getTops())
             {
                 cover[top] = 2;
             }
 
-            foreach (int  pendant in g.getPendants())
+            foreach (int pendant in g.getPendants())
             {
-                cover[g.getAdjListArray()[pendant][0]]=2;
+                cover[g.getAdjListArray()[pendant][0]] = 2;
             }
 
             return cover;
@@ -101,7 +101,7 @@ namespace dataStructuresApp
             bool algResult = algorithm.Validate(g, new bool[g.GetVertices()], g.GetVertices(), 0, Convert.ToInt32(maxVertexCover.Text));
             if (algResult)
             {
-                result.Text = "TRUE";               
+                result.Text = "TRUE";
             }
             else
             {
@@ -121,7 +121,7 @@ namespace dataStructuresApp
             g.makeNonPendant();
             // g.writeGraphToFile();
             g.updateColorGraphToFile();
-           
+
         }
 
         private void BtnPendantPlus_Click(object sender, EventArgs e)
@@ -130,7 +130,7 @@ namespace dataStructuresApp
             g.makePendant();
             // g.writeGraphToFile();
             g.updateColorGraphToFile();
-            
+
         }
 
         private void BtnTopMinus_Click(object sender, EventArgs e)
@@ -139,7 +139,7 @@ namespace dataStructuresApp
             g.makeNonTop(Convert.ToInt32(tbEdgesForTop.Text));
             //g.writeGraphToFile();
             g.updateColorGraphToFile();
-            
+
         }
 
         private void BtnTopPlus_Click(object sender, EventArgs e)
@@ -148,11 +148,11 @@ namespace dataStructuresApp
             g.makeTop(Convert.ToInt32(tbEdgesForTop.Text));
             //g.writeGraphToFile();
             g.updateColorGraphToFile();
-            
+
         }
 
         private void BtnKernelize_Click(object sender, EventArgs e)
-        {            
+        {
             try
             {
                 g.kernelization(Convert.ToInt32(tbEdgesForTop.Text));
@@ -164,7 +164,7 @@ namespace dataStructuresApp
 
         private void BtnSmartSearch_Click(object sender, EventArgs e)
         {
-           
+
 
             int[] coverInitial = preprocess();
             g.setOk(true);
@@ -186,23 +186,28 @@ namespace dataStructuresApp
             sw.Reset();
         }
 
-        
+
         private void BtnAproxSearch_Click(object sender, EventArgs e)
         {
-           
+
 
             sw.Start();
-           
+
 
 
             //prints size of vertex cover and vertices that are in the cover
             algorithm.ValidateAprox(g, g.GetVertices());
-            
+
 
             sw.Stop();
             Console.WriteLine();
             Console.WriteLine("Elapsed={0}", sw.Elapsed);
             sw.Reset();
+        }
+
+        private void myPictureBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
